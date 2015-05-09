@@ -1,3 +1,10 @@
+# Author: Chris Demeke
+# Created: 05/09/2015
+#
+# This script is used to copy my static generated blog and 
+# tee it up to be checked into github.
+####################################################################
+
 # Bash script to update update the static version of the ghost site
 buster generate --domain=http://127.0.0.1:2368
 
@@ -18,4 +25,5 @@ cd static
 
 # add all files to github
 git add *
+
 echo "Ready to commit and add to repo"
