@@ -15,25 +15,25 @@ To update the blog do the following steps:
 
 1. Copy Repo (if needed)
 2. Start an instance of Ghost (locally) using:
-```
-npm start
-```
+	```
+	npm start
+	```
 3. Go to localhost:2368/ghost/ to log into the blog
 4. Create a blog post or whatever you need to do
 5. When read to commit to github run the following in a new terminal
-```
-bash update.sh
-```
+	```
+	bash update.sh
+	```
 6. Once the script is done go into the static/ folder
 7. Check that the static files were generated using:
-```
-git status
-```
+	```
+	git status
+	```
 8. Commit to github using:
-```
-git commit -m "COMMENT ON CHANGES"
-```
+	```
+	git commit -m "COMMENT ON CHANGES"
+	```
 9. Push to github using:
-```
-git push origin master
-```
+	```
+	git push origin master
+	```
