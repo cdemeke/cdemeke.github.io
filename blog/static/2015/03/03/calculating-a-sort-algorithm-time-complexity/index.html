@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Calculating a Sort Algorithm Time complexity</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=aa4a39a4fa" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/" />
+    
+    <meta property="og:site_name" content="Chris Demeke" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Calculating a Sort Algorithm Time complexity" />
+    <meta property="og:description" content="Time the time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input. -Wikipedia What Time complexity is used to measure how efficient..." />
+    <meta property="og:url" content="http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/" />
+    <meta property="og:image" content="http://localhost:2368/content/images/2015/05/time.jpg" />
+    <meta property="article:published_time" content="2015-03-04T04:03:00.000Z" />
+    <meta property="article:modified_time" content="2015-05-09T03:12:47.625Z" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Calculating a Sort Algorithm Time complexity" />
+    <meta name="twitter:description" content="Time the time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input. -Wikipedia What Time complexity is used to measure how efficient..." />
+    <meta name="twitter:url" content="http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/" />
+    <meta name="twitter:image:src" content="http://localhost:2368/content/images/2015/05/time.jpg" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Chris Demeke",
+    "author": {
+        "@type": "Person",
+        "name": "Chris Demeke",
+        "url": "http://localhost:2368/author/chris",
+        "sameAs": null,
+        "description": null
+    },
+    "headline": "Calculating a Sort Algorithm Time complexity",
+    "url": "http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/",
+    "datePublished": "2015-03-04T04:03:00.000Z",
+    "dateModified": "2015-05-09T03:12:47.625Z",
+    "image": "http://localhost:2368/content/images/2015/05/time.jpg",
+    "description": "Time the time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input. -Wikipedia What Time complexity is used to measure how efficient..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.6" />
+    <link rel="alternate" type="application/rss+xml" title="Chris Demeke" href="http://localhost:2368/rss/" />
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://www.cdemeke.com">Home</a></li>
+            <li class="nav-blog" role="presentation"><a href="http://cdemeke.github.io/">Blog</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../../../../content/images/2015/05/time.jpg)">
+    <nav class="main-nav overlay clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Calculating a Sort Algorithm Time complexity</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-03-03">03 March 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <blockquote>
+  <p>Time the time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input.</p>
+</blockquote>
+
+<p>-<a href="http://en.wikipedia.org/wiki/Time_complexity">Wikipedia</a></p>
+
+<h3 id="what">What</h3>
+
+<p>Time complexity is used to measure how efficient your algorithm really is. This is done by counting the number of times your algorithm must go through every element in your list until you are able to achieve whatever you are trying to achieve. </p>
+
+<p>Example:</p>
+
+<p>If you want to find the largest number in this list.  </p>
+
+<pre><code class="language- ">unsortedList = [3,43,2]  
+</code></pre>
+
+<p>If we compare every element in the list then the time complexity of that algorithm would be O(n).  O = the notation used to convey time complexity. </p>
+
+<h3 id="why">Why</h3>
+
+<p>The reason why we evaluate time complexity is because there are multiple ways to achieve the same thing. Some methods are more efficient (meaning faster run time and/or less CPU demand). The time complexity of an algorithm might seem irrelevant until you start getting huge sets of data. Then that performance can quickly matter from a few seconds to hours and days of a difference. </p>
+        </section>
+
+        <footer class="post-footer">
+
+
+
+            <section class="author">
+                <h4><a href="../../../../author/chris/index.html">Chris Demeke</a></h4>
+
+                    <p>Read <a href="../../../../author/chris/index.html">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Calculating%20a%20Sort%20Algorithm%20Time%20complexity&amp;url=http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2015/03/03/calculating-a-sort-algorithm-time-complexity/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(../../../../content/images/2015/05/book.jpg)" href="../../12/obviously-of-course/index.html">
+        <section class="post">
+            <h2>Obviously, of course</h2>
+            <p>Imposter syndrome is a psychological phenomenon in which people are unable to internalize their accomplishments. Wikipedia Many successful, ambitious&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(../../../../content/images/2015/05/bunny.jpg)" href="../../../02/21/intro/index.html">
+        <section class="post">
+            <h2>Intro</h2>
+            <p>Hello World! Hey, thanks for checking out my site!  My name is Chris Demeke. I currently reside in New&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Chris Demeke</a> &copy; 2015</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script src="../../../../public/jquery.js?v=aa4a39a4fa"></script>
+
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=aa4a39a4fa"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=aa4a39a4fa"></script>
+
+</body>
+</html>
