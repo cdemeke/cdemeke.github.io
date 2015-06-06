@@ -1,0 +1,17 @@
+
+i.fa.default {
+    @include getDefaultProps();
+    font-size: $icon-size;
+    width: $icon-size;
+	height: $icon-size;
+    @include transition(color, 0.2s);
+
+    @each $sn in $social-networks {
+        &.fa-#{nth($sn, 1)} { 
+        	color: #{nth($sn, 2)};
+            &:hover {
+                color: darken(nth($sn,2), 10%);
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+// Variables
+$base-colour: #B0BEC5;				// Base background color
+$text-colour-override: false;		// Over-ride the text color. Leave as false to let it decide the color depending on the background.
+$icon-size: 2em;					// Total icon size
+$gutter: 15px;						// Margin between icons
+
+
+
+// Get Font Awesome - DELETE THIS IF YOU'VE ALREADY INCLUDED IT IN YOUR PROJECT
+$fa-font-path: "font-awesome/fonts";
+// @import "font-awesome/scss/font-awesome";
+
+// Mixins
+@import "font-awesome/core/mixins";
+
+// // Functions
+@import "font-awesome/core/functions";
+
+// // Social Networks Included in this project
+@import "font-awesome/core/social-networks";
+
+
+
+// Standard icons in the social network's color
+@import "font-awesome/icons/default";
+
+// Standard icons with the social network's colour in the background
+@import "font-awesome/icons/default-hover";
+
+// Standard icons in the social network's color. Spins on hover.
+@import "font-awesome/icons/default-spin";
+
+// Standard icons with the social network's colour in the background and spins on hover
+@import "font-awesome/icons/default-spin-hover";
+
+// Round icons with the social network's colour in the background
+@import "font-awesome/icons/rounded";
+
+// Round icons with the social network's color applied to the background when hovered over
+@import "font-awesome/icons/rounded-hover";
+
+// Round icons with the social network's colour in the background and spins on hover
+@import "font-awesome/icons/rounded-spin";
+
+// Round icons with the social network's color in the background. Spins on hover
+@import "font-awesome/icons/rounded-spin-hover";
+
+// Square icons with the social network's colour in the background
+@import "font-awesome/icons/squared.scss";
+
+// Square icons with the social network's color applied to the background when hovered over
+@import "font-awesome/icons/squared-hover";
+
+// Square icons with the social network's colour in the background and shifts down when hovered
+@import "font-awesome/icons/squared-shift";
+
+// Square icons with the social network's color applied to the background and shifts down when hovered
+@import "font-awesome/icons/squared-shift-hover";
